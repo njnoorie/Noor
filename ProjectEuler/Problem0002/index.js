@@ -6,4 +6,20 @@
 
 // By considering the terms in the Fibonacci sequence whose values do not exceed four million, find the sum of the even-valued terms.
 
+function fibonacciSum(n) {
+    let i = 1, j = 2, next;
+    sum = 0;
+    while (i <= n) {
+        if (i % 2 == 0) {
+            sum += i;
+        }
+        next = i + j;
+        i = j;
+        j = next;
+    }
 
+    return sum;
+
+}
+
+console.log(fibonacciSum(4000000));
