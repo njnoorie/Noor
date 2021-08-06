@@ -1,5 +1,5 @@
 function isPrime(n) {
-    for (let i = 2; i < Math.sqrt(n); i++) {
+    for (let i = 2; i <= Math.sqrt(n); i++) {
         if (n % i == 0) {
             return n + " is not a prime";
         }
@@ -9,4 +9,4 @@ function isPrime(n) {
 
 }
 
-console.log(isPrime(100));
+console.log(isPrime(4));

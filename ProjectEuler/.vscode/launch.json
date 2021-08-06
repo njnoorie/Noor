@@ -30,6 +30,24 @@
                 "<node_internals>/**"
             ],
             "program": "${workspaceFolder}\\Problem0004\\index.js"
+        },
+        {
+            "type": "pwa-node",
+            "request": "launch",
+            "name": "Problem0007",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}\\Problem0007\\index.js"
+        },
+        {
+            "type": "pwa-node",
+            "request": "launch",
+            "name": "Problem0008",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}\\Problem0008\\index.js"
         }
     ]
 }
