@@ -43,11 +43,11 @@
         {
             "type": "pwa-node",
             "request": "launch",
-            "name": "Problem0008",
+            "name": "Problem0011",
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "program": "${workspaceFolder}\\Problem0008\\index.js"
+            "program": "${workspaceFolder}\\Problem0011\\index.js"
         }
     ]
 }
