@@ -7,11 +7,27 @@
         {
             "type": "pwa-node",
             "request": "launch",
-            "name": "Launch Program",
+            "name": "Arrays",
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "program": "${workspaceFolder}\\Problems\\sherlockAndAnagrams.js"
+            "program": "${workspaceFolder}\\Problems\\Arrays\\moveZeros.js"
+        }, {
+            "type": "pwa-node",
+            "request": "launch",
+            "name": "DictHashMaps",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}\\Problems\\DictHashMaps\\lengthOfLongestSubstring.js"
+        }, {
+            "type": "pwa-node",
+            "request": "launch",
+            "name": "LinkedList",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}\\LinkedList\\Samples\\reverse.js"
         }
     ]
 }
