@@ -6,16 +6,25 @@
      {
          return head;
      }
-     let tail = head,
-     first = head;
+     let   first = head;
      let second= first.next;
+
+     first.next = null;
+     first.prev = second;
+
      while(second){
-         const temp = second.next;
-         second.next=first;
+        // const temp = second.next;
+        // second.next = first;
+        // first.prev = second;
+        
+        second.prev = second.next;
+        second.next = first;
+        
          first = second;
-         second = temp;
+         second = second.prev;
+
      }
-     tail.next=null;
+     
      return first;
  }
  var reverseRecurse = function(head) {
@@ -33,18 +42,25 @@
  }
  class ListNode {
 	// constructor
-	constructor(val, next) {
+	constructor(val, prev, next) {
         this.val = (val===undefined ? 0 : val)
         this.next = (next===undefined ? null : next)
+        this.prev = (prev===undefined ? null : prev)
 	}
 }
 let head = new ListNode(1);
 let node = new ListNode(2);
-head.next =node ; 
-node.next = new ListNode(3);node = node.next;
-node.next = new ListNode(4);node = node.next;
-node.next = new ListNode(5);
+let node3 = new ListNode(3);
+let node4 = new ListNode(4);
+head.next =node ;
+node.prev = head; 
+
+node.next = node3;
+node3.prev = node;
+
+node3.next = node4;
+node4.prev = node3;
 
 //console.log(JSON.stringify(head));
 // 1 2 3 4 5
-console.log(JSON.stringify(reverseRecurse(head)));
+console.log(reverse(head));

@@ -12,6 +12,24 @@
                 "<node_internals>/**"
             ],
             "program": "${workspaceFolder}\\Sorting\\insertionSort.js"
+        },
+        {
+            "type": "pwa-node",
+            "request": "launch",
+            "name": "BinaryTree",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}\\BinaryTree\\BinaryTreeFromInOrderAndPreOrder.js"
+        },
+        {
+            "type": "pwa-node",
+            "request": "launch",
+            "name": "reverse",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}\\Leetcode\\LinkedList\\DoublyLinkedList\\reverse.js"
         }
     ]
 }

@@ -129,23 +129,8 @@ class BinarySearchTree {
         return this.root;
     }
 
-    height(node){
-        if(!node){
-            return -1;
-        }
-        console.log(node.data);
-        return Math.max(this.height(node.left),this.height(node.right)) + 1;
-    }
-    height1(node){
-        if(!node){
-            return -1;
-        }
-        let current = node; 
-        let ht = 0;
-        while(current){
-            
-        }
-        return Math.max(this.height(node.left),this.height(node.right)) + 1;
+    lca(root,v1,v2){
+        
     }
 }
 
@@ -172,26 +157,3 @@ BST.insert(27);
 //    5   9  17 
 
 var root = BST.getRootNode();
-
-// prints 5 7 9 10 13 15 17 22 25 27
-//BST.inorder(root);
-
-// Removing node with no children 
-/////BST.remove(15);
-
-
-//          15
-//         /  \
-//        10   25
-//       / \   / \
-//      7  13 22  27
-//       \    /
-//        9  17 
-
-
-//var root = BST.getRootNode();
-
-// prints 7 9 10 13 15 17 22 25 27
-//BST.inorder(root);
-
-console.log(BST.height(root));
